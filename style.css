@@ -1,0 +1,167 @@
+/* elasekaibihigana pasobeso */
+    :root {
+        --biruapakek: #0f6b6e;
+        --birugelap: #0a4d50;
+        --oyen: #f7941d;
+        --hijau: #8cc63f;
+        --latar: #f4f8f8;
+        --teks: #222;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #222;
+    }
+    h1{
+        color: var(--biruapakek);
+    }
+
+    .navbar {
+        background-color: var(--biruapakek);
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .pintarku {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .main-nvbr {
+        min-height: 80px;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .gologolo {
+        width: 100px;
+        height: auto;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .nav-links a:hover {
+        background-color: var(--birugelap);
+        border-radius: 4px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+    }
+    .card h3 {
+        color: var(--birugelap);
+    }
+
+    .card {
+        padding: 24px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        border-top: 4px solid var(--hijau);
+        background-color: #fff;
+    }
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    main section {
+        min-height: 240px;
+        padding: 40px 24px;
+        scroll-margin-top: 80px;
+        border-bottom: 1px solid #ddd;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 28px;
+        background-color: var(--oyen);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+        background-color: #d97f0e;
+    }
+
+    .pahlawan {
+        text-align: center;
+        min-height: auto;
+        padding: 70px 24px;
+        background-color: var(--latar);
+    }
+
+    .footer {
+        padding: 16px 24px;
+        text-align: center;
+        background-color: var(--birugelap);
+        color: #fff;  
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    @media (max-width: 600px) {
+        .main-nvbr {
+            flex-direction: column;
+            padding: 12px 24px;
+        }
+        .nav-links {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .pahlawan h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+
+    .materi {
+        width: 45%;
+        height: auto;
+    }
+    .materi-isi {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.gambar-materi {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 12px;
+}
+.materi-isi > div {
+    flex: 1;
+}
+h3 {
+    color: var(--biruapakek);
+}

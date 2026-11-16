@@ -1,9 +1,9 @@
 :root {
     --biru: #0f6b6e;
-    --biru-gelap: #0a4d50;
-    --oranye: #f7941d;
-    --hijau: #8cc63f;
-    --latar: #f4f8f8;
+    --biru-tua: #0a4d50;
+    --oyen: #f7941d;
+    --ijo: #8cc63f;
+    --warna-bg: #f4f8f8;
     --teks: #263238;
 }
 * {
@@ -67,22 +67,23 @@ body {
     border-radius: 4px;
 }
 .menu-atas a:hover {
-    background: var(--biru-gelap);
+    background: var(--biru-tua);
 }
 section {
     scroll-margin-top: 90px;
 }
 
-.beranda {
+/* gambarnya ditaruh di background, jadi teksnya gak perlu numpang di foto */
+.pahlawan {
     background: linear-gradient(90deg, rgba(244, 251, 250, 0.97) 0%, rgba(244, 251, 250, 0.88) 34%, rgba(244, 251, 250, 0.12) 65%, rgba(244, 251, 250, 0) 100%), url("hero-pintarku.jpg") center center / cover no-repeat;
     padding: 105px 24px;
     border-bottom: 1px solid #e1ebeb;
 }
-.isi-beranda {
+.isi-pahlawan {
     max-width: 1100px;
     margin: auto;
 }
-.tulisan-beranda {
+.teks-pahlawan {
     max-width: 620px;
     color: var(--teks);
 }
@@ -96,24 +97,24 @@ section {
 h1 {
     font-size: 44px;
     line-height: 1.2;
-    color: var(--biru-gelap);
+    color: var(--biru-tua);
     margin: 17px 0 20px;
 }
 h1 span {
     color: var(--biru);
 }
-.beranda .tulisan-beranda > p:not(.teks-kecil) {
+.pahlawan .teks-pahlawan > p:not(.teks-kecil) {
     font-size: 17px;
     max-width: 520px;
     margin-bottom: 26px;
 }
-.tombol-beranda {
+.tombol-pahlawan {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 .link-tentang {
-    color: var(--biru-gelap);
+    color: var(--biru-tua);
     text-decoration: none;
     font-weight: bold;
 }
@@ -122,7 +123,7 @@ h1 span {
 }
 .tombol-program {
     display: inline-block;
-    background: var(--oranye);
+    background: var(--oyen);
     color: white;
     text-decoration: none;
     padding: 11px 24px;
@@ -141,7 +142,7 @@ h1 span {
 }
 h2 {
     font-size: 28px;
-    color: var(--biru-gelap);
+    color: var(--biru-tua);
     margin: 0 0 14px;
 }
 h3 {
@@ -153,28 +154,29 @@ h3 {
     margin: 0 0 28px;
 }
 
-.daftar-program {
+/* 3 kartu sejajar buat kelas reguler, intensif, sama privat */
+.kumpulan-kartu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-.kotak-program {
+.kartu {
     border: 1px solid #dedede;
-    border-top: 4px solid var(--hijau);
+    border-top: 4px solid var(--ijo);
     border-radius: 7px;
     padding: 25px;
     background: white;
     display: flex;
     flex-direction: column;
 }
-.kotak-program h3 {
+.kartu h3 {
     font-size: 20px;
 }
-.kotak-program p {
+.kartu p {
     margin: 0 0 20px;
     flex: 1;
 }
-.gambar-program {
+.ikon-kartu {
     width: 55px;
     height: 55px;
     display: flex;
@@ -185,7 +187,7 @@ h3 {
     font-size: 28px;
     margin-bottom: 20px;
 }
-.nomor-program {
+.nomor-kartu {
     display: block;
     color: #728184;
     font-size: 13px;
@@ -253,7 +255,7 @@ h3 {
     border-bottom: 0;
 }
 .kontak-info {
-    background: var(--latar);
+    background: var(--warna-bg);
     border-left: 4px solid var(--biru);
     padding: 14px 22px;
     margin-top: 22px;
@@ -269,11 +271,12 @@ h3 {
 }
 
 .footer {
-    background: var(--biru-gelap);
+    background: var(--biru-tua);
     color: #fff;
     padding: 48px 24px 18px;
     font-size: 14px;
 }
+/* footer dibagi 3 kolom biar gak numpuk */
 .isi-footer {
     max-width: 1100px;
     margin: 0 auto;
@@ -347,10 +350,10 @@ h3 {
     h1 {
         font-size: 30px;
     }
-    .tombol-beranda {
+    .tombol-pahlawan {
         flex-wrap: wrap;
     }
-    .daftar-program, .daftar-kelebihan {
+    .kumpulan-kartu, .daftar-kelebihan {
         grid-template-columns: 1fr;
     }
     .isi-footer {

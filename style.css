@@ -61,8 +61,17 @@ h3 { color: var(--biru); margin: 0 0 12px; }
 .kontak-info { background: var(--latar); border-left: 4px solid var(--biru); padding: 14px 22px; margin-top: 22px; max-width: 560px; }
 .kontak-info p { margin: 8px 0; }
 .catatan { font-size: 13px; color: #666; margin-top: 18px; }
-footer { text-align: center; background: var(--biru-gelap); color: white; padding: 18px 24px; font-size: 14px; }
-footer p { margin: 0; }
+.footer { background: var(--biru-gelap); color: #fff; padding: 48px 24px 18px; font-size: 14px; }
+.footer-utama { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1.2fr; gap: 55px; padding-bottom: 35px; }
+.footer-logo { color: #fff; text-decoration: none; font-size: 25px; font-weight: bold; }
+.footer-tentang p { max-width: 340px; margin: 13px 0 0; color: #d0e1e1; line-height: 1.8; }
+.footer h3 { font-size: 16px; color: white; margin: 3px 0 16px; }
+.footer-menu ul { list-style: none; padding: 0; margin: 0; }
+.footer-menu li { margin-bottom: 8px; }
+.footer-menu a { color: #d0e1e1; text-decoration: none; }
+.footer-menu a:hover { text-decoration: underline; color: white; }
+.footer-kontak p { margin: 0 0 10px; color: #d0e1e1; }
+.footer-bawah { border-top: 1px solid #ffffff30; padding-top: 18px; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; gap: 12px; color: #d0e1e1; font-size: 13px; }
 @media (max-width: 700px) {
     .main-nvbr { flex-direction: column; gap: 4px; }
     .nav-links { flex-wrap: wrap; justify-content: center; }
@@ -72,6 +81,8 @@ footer p { margin: 0; }
     .hero-gambar { width: 100%; max-width: 100%; }
     .hero-tombol { flex-wrap: wrap; }
     .cards, .daftar-keunggulan { grid-template-columns: 1fr; }
+    .footer-utama { grid-template-columns: 1fr; gap: 26px; }
+    .footer-bawah { flex-direction: column; }
     .materi-isi, .tentang-isi { flex-direction: column; align-items: stretch; }
     .gambar-materi { width: 100%; max-width: 100%; }
 }

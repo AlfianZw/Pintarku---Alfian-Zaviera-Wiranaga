@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- navbar ini sengaja sticky biar pas scroll menunya masih keliatan -->
     <nav class="navbar">
         <div class="isi-navbar">
             <a href="#home" class="logo-atas">
@@ -25,13 +26,14 @@
     </nav>
 
     <main>
-        <section id="home" class="beranda">
-            <div class="isi-beranda">
-                <div class="tulisan-beranda">
+        <!-- section hero, alias pahlawan wkwk -->
+        <section id="home" class="pahlawan">
+            <div class="isi-pahlawan">
+                <div class="teks-pahlawan">
                     <p class="teks-kecil">TEMAN BELAJAR UNTUK SEMUA SISWA</p>
                     <h1>Belajar Lebih Mudah,<br><span>Raih Impianmu.</span></h1>
                     <p>PintarKu membantu siswa memahami pelajaran dengan cara yang sederhana dan menyenangkan. Yuk, temukan cara belajar yang cocok buat kamu!</p>
-                    <div class="tombol-beranda">
+                    <div class="tombol-pahlawan">
                         <a href="#program" class="tombol-program">Lihat Program</a>
                         <a href="#tentang-kami" class="link-tentang">Kenali PintarKu &rarr;</a>
                     </div>
@@ -39,27 +41,28 @@
             </div>
         </section>
 
+        <!-- kartu buat nampilin 3 pilihan kelas di PintarKu -->
         <section id="program" class="bagian-web">
             <h2>Program Belajar</h2>
             <p class="deskripsi-bagian">Setiap siswa punya cara belajar yang berbeda. Karena itu, kami menyediakan beberapa pilihan program.</p>
-            <div class="daftar-program">
-                <div class="kotak-program">
-                    <div class="gambar-program" aria-hidden="true">📘</div>
+            <div class="kumpulan-kartu">
+                <div class="kartu">
+                    <div class="ikon-kartu" aria-hidden="true">📘</div>
                     <h3>Kelas Reguler</h3>
                     <p>Belajar secara rutin dengan materi yang disusun bertahap agar lebih mudah dipahami.</p>
-                    <span class="nomor-program">Program 01</span>
+                    <span class="nomor-kartu">Program 01</span>
                 </div>
-                <div class="kotak-program">
-                    <div class="gambar-program" aria-hidden="true">📝</div>
+                <div class="kartu">
+                    <div class="ikon-kartu" aria-hidden="true">📝</div>
                     <h3>Kelas Intensif</h3>
                     <p>Program belajar yang lebih fokus untuk membantu persiapan ulangan dan ujian.</p>
-                    <span class="nomor-program">Program 02</span>
+                    <span class="nomor-kartu">Program 02</span>
                 </div>
-                <div class="kotak-program">
-                    <div class="gambar-program" aria-hidden="true">👨‍🏫</div>
+                <div class="kartu">
+                    <div class="ikon-kartu" aria-hidden="true">👨‍🏫</div>
                     <h3>Kelas Privat</h3>
                     <p>Pendampingan belajar secara pribadi sesuai kebutuhan dan kemampuan siswa.</p>
-                    <span class="nomor-program">Program 03</span>
+                    <span class="nomor-kartu">Program 03</span>
                 </div>
             </div>
         </section>
@@ -128,6 +131,7 @@
         </section>
     </main>
 
+    <!-- footer paling bawah, sekalian buat navigasi ulang -->
     <footer class="footer">
         <div class="isi-footer">
             <div class="info-pintarku">

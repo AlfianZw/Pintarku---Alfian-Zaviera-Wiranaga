@@ -41,9 +41,17 @@ h2 { font-size: 28px; color: var(--biru-gelap); margin: 0 0 14px; }
 h3 { color: var(--biru); margin: 0 0 12px; }
 .pembuka { max-width: 680px; margin: 0 0 28px; }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.card { border: 1px solid #dedede; border-top: 4px solid var(--hijau); border-radius: 7px; padding: 24px; background: white; }
-.card p { margin-bottom: 0; }
-.nomor { display: block; color: #888; font-size: 14px; margin-bottom: 12px; }
+.card { border: 1px solid #dedede; border-top: 4px solid var(--hijau); border-radius: 7px; padding: 25px; background: white; display: flex; flex-direction: column; }
+.card h3 { font-size: 20px; }
+.card p { margin: 0 0 20px; flex: 1; }
+.ikon-program { width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; background: #edf7f5; border-radius: 8px; font-size: 28px; margin-bottom: 20px; }
+.nomor { display: block; color: #728184; font-size: 13px; margin-top: auto; padding-top: 13px; border-top: 1px solid #eee; }
+.keunggulan { background: #f7fbfa; }
+.daftar-keunggulan { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 25px; }
+.keunggulan-item { padding: 8px 12px 8px 0; }
+.ikon-keunggulan { display: flex; width: 32px; height: 32px; align-items: center; justify-content: center; background: var(--biru); color: white; border-radius: 50%; font-weight: bold; margin-bottom: 16px; }
+.keunggulan-item h3 { font-size: 18px; }
+.keunggulan-item p { margin-bottom: 0; font-size: 15px; }
 .materi-isi, .tentang-isi { display: flex; align-items: center; gap: 38px; margin-top: 24px; }
 .materi-isi > div, .tentang-isi > div { flex: 1; }
 .gambar-materi { width: 42%; max-width: 420px; height: auto; border-radius: 8px; object-fit: cover; }
@@ -63,7 +71,7 @@ footer p { margin: 0; }
     .hero-isi { flex-direction: column; align-items: stretch; gap: 28px; }
     .hero-gambar { width: 100%; max-width: 100%; }
     .hero-tombol { flex-wrap: wrap; }
-    .cards { grid-template-columns: 1fr; }
+    .cards, .daftar-keunggulan { grid-template-columns: 1fr; }
     .materi-isi, .tentang-isi { flex-direction: column; align-items: stretch; }
     .gambar-materi { width: 100%; max-width: 100%; }
 }
